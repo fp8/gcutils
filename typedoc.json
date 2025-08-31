@@ -1,0 +1,9 @@
+{
+    "externalSymbolLinkMappings": {
+        "google-auth-library": {
+            "GoogleAuthOptions.credentials": "#",
+            "AuthClient": "#",
+            "GoogleAuthOptions.apiKey": "#"
+        }
+    }
+}

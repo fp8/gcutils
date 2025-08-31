@@ -1,0 +1,14 @@
+# Ignore Directories
+docs/
+release/
+scripts/
+src/
+test/
+types/
+
+# Ignore Files
+.*
+ts-node
+tsconfig.base.json
+tsconfig.json
+tslint.json
