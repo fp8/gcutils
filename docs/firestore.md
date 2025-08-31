@@ -54,7 +54,7 @@ Configuration interface extending Google Cloud Firestore Settings with:
 ### Basic Setup
 
 ```typescript
-import { FirestoreService } from '@farport/gcutils/firestore';
+import { FirestoreService } from '@fp8/gcutils/firestore';
 
 // Basic initialization
 const firestore = new FirestoreService();
@@ -70,7 +70,7 @@ const firestore = new FirestoreService({
 ### Creating a Model
 
 ```typescript
-import { AbstractBaseFirebaseModel } from '@farport/gcutils/firestore';
+import { AbstractBaseFirebaseModel } from '@fp8/gcutils/firestore';
 import { IsEmail, IsString, MinLength, IsOptional } from 'class-validator';
 import { Type, Transform } from 'class-transformer';
 
@@ -378,7 +378,7 @@ yarn fb-emulator:down
 ### Test Example
 
 ```typescript
-import { FirestoreService } from '@farport/gcutils/firestore';
+import { FirestoreService } from '@fp8/gcutils/firestore';
 
 describe('User operations', () => {
   let firestore: FirestoreService;

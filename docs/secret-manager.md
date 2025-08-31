@@ -47,7 +47,7 @@ Helper functions for:
 ### Basic Usage
 
 ```typescript
-import { SecretsService } from '@farport/gcutils/secret-manager';
+import { SecretsService } from '@fp8/gcutils/secret-manager';
 
 // Create service and load secrets
 const secretsService = await SecretsService.create(
@@ -307,7 +307,7 @@ Object representation of a secret with explicit version.
 For testing, mock the Google Cloud Secret Manager client:
 
 ```typescript
-import { SecretsService } from '@farport/gcutils/secret-manager';
+import { SecretsService } from '@fp8/gcutils/secret-manager';
 
 // Mock the SecretManagerServiceClient
 jest.mock('@google-cloud/secret-manager', () => ({
@@ -424,7 +424,7 @@ const newService = await SecretsService.create('api-key|2');
 ### Web Application Setup
 
 ```typescript
-import { SecretsService } from '@farport/gcutils/secret-manager';
+import { SecretsService } from '@fp8/gcutils/secret-manager';
 
 class WebApp {
     private secrets: SecretsService;

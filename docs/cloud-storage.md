@@ -23,7 +23,7 @@ Before using the cloud-storage module, ensure you have Google Cloud authenticati
 ## Basic Usage
 
 ```typescript
-import { BStore, BStoreRx } from '@farport/gcutils/cloud-storage';
+import { BStore, BStoreRx } from '@fp8/gcutils/cloud-storage';
 
 // Promise-based interface with default settings
 const store = new BStore();
@@ -168,7 +168,7 @@ writeStream.end();
 RxJS Observable-based Google Cloud Storage wrapper. Has the same methods as `BStore` but returns Observables instead of Promises.
 
 ```typescript
-import { BStoreRx } from '@farport/gcutils/cloud-storage';
+import { BStoreRx } from '@fp8/gcutils/cloud-storage';
 
 const storeRx = new BStoreRx();
 
@@ -246,7 +246,7 @@ This interface extends Google Cloud Storage's `StorageOptions` and adds an optio
 Parse a Google Storage path into components.
 
 ```typescript
-import { parseGsPath } from '@farport/gcutils/cloud-storage';
+import { parseGsPath } from '@fp8/gcutils/cloud-storage';
 
 const parsed = parseGsPath('gs://my-bucket/path/to/file.pdf');
 console.log(parsed.bucket);    // 'my-bucket'
@@ -259,7 +259,7 @@ console.log(parsed.filename);  // 'file.pdf'
 Generate IGsUri from components.
 
 ```typescript
-import { generateGsUri } from '@farport/gcutils/cloud-storage';
+import { generateGsUri } from '@fp8/gcutils/cloud-storage';
 
 const gsUri = generateGsUri('my-bucket', 'file.pdf', 'path/to');
 console.log(gsUri.path);  // 'path/to/file.pdf'
@@ -270,7 +270,7 @@ console.log(gsUri.path);  // 'path/to/file.pdf'
 Generate a gs:// path from IGsUri.
 
 ```typescript
-import { generateGsPath } from '@farport/gcutils/cloud-storage';
+import { generateGsPath } from '@fp8/gcutils/cloud-storage';
 
 const path = generateGsPath({
     bucket: 'my-bucket',
@@ -288,7 +288,7 @@ console.log(path);  // 'gs://my-bucket/path/to/file.pdf'
 ### Basic File Operations
 
 ```typescript
-import { BStore } from '@farport/gcutils/cloud-storage';
+import { BStore } from '@fp8/gcutils/cloud-storage';
 
 const store = new BStore();
 
@@ -368,7 +368,7 @@ async function streamOperations() {
 ### Using RxJS Interface
 
 ```typescript
-import { BStoreRx } from '@farport/gcutils/cloud-storage';
+import { BStoreRx } from '@fp8/gcutils/cloud-storage';
 import { map, filter } from 'rxjs/operators';
 
 const storeRx = new BStoreRx();

@@ -386,7 +386,7 @@ describe('helper', () => {
             expect(result).toBe(mockResponse);
             expect(mockFetch).toHaveBeenCalledWith('https://example.com', {
                 headers: {
-                    'User-Agent': '@farport/gcutils',
+                    'User-Agent': '@fp8/gcutils',
                 },
             });
         });
@@ -408,7 +408,7 @@ describe('helper', () => {
 
             expect(mockFetch).toHaveBeenCalledWith('https://example.com', {
                 headers: {
-                    'User-Agent': '@farport/gcutils',
+                    'User-Agent': '@fp8/gcutils',
                     'Content-Type': 'application/json',
                     'X-Custom-Header': 'custom-value',
                 },
@@ -428,7 +428,7 @@ describe('helper', () => {
 
             expect(mockFetch).toHaveBeenCalledWith('https://example.com', {
                 headers: {
-                    'User-Agent': '@farport/gcutils',
+                    'User-Agent': '@fp8/gcutils',
                     Authorization: 'Bearer test-token-123',
                 },
             });
@@ -451,7 +451,7 @@ describe('helper', () => {
 
             expect(mockFetch).toHaveBeenCalledWith('https://example.com', {
                 headers: {
-                    'User-Agent': '@farport/gcutils',
+                    'User-Agent': '@fp8/gcutils',
                     Authorization: 'Bearer custom-token',
                 },
             });
@@ -471,7 +471,7 @@ describe('helper', () => {
             expect(result).toBe(mockResponse);
             expect(mockFetch).toHaveBeenCalledWith(url, {
                 headers: {
-                    'User-Agent': '@farport/gcutils',
+                    'User-Agent': '@fp8/gcutils',
                 },
             });
         });

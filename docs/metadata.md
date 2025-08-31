@@ -37,7 +37,7 @@ Main class for fetching and caching metadata from the Google Cloud Metadata serv
 ### Basic Usage
 
 ```typescript
-import { GCloudMetadata } from '@farport/gcutils/metadata';
+import { GCloudMetadata } from '@fp8/gcutils/metadata';
 
 // Create instance with default metadata server
 const metadata = new GCloudMetadata();
@@ -227,12 +227,12 @@ For region and zone metadata, the module automatically extracts the short name f
 For testing, you can mock the metadata service:
 
 ```typescript
-import { GCloudMetadata } from '@farport/gcutils/metadata';
-import * as helper from '@farport/gcutils/core/helper';
+import { GCloudMetadata } from '@fp8/gcutils/metadata';
+import * as helper from '@fp8/gcutils/core/helper';
 
 // Mock the fetch function
-jest.mock('@farport/gcutils/core/helper', () => ({
-    ...jest.requireActual('@farport/gcutils/core/helper'),
+jest.mock('@fp8/gcutils/core/helper', () => ({
+    ...jest.requireActual('@fp8/gcutils/core/helper'),
     fetch: jest.fn(),
 }));
 
@@ -292,7 +292,7 @@ describe('Environment Variable Fallbacks', () => {
 ### Complete Application Setup
 
 ```typescript
-import { GCloudMetadata } from '@farport/gcutils/metadata';
+import { GCloudMetadata } from '@fp8/gcutils/metadata';
 
 class Application {
     private metadata = new GCloudMetadata();
