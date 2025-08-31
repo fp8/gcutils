@@ -245,7 +245,7 @@ export async function fetcher(
     headers?: Record<string, string>,
 ): Promise<string> {
     const headersToUse: RequestInit['headers'] = {
-        'User-Agent': '@farport/gcutils',
+        'User-Agent': '@fp8/gcutils',
         ...headers, // Merge additional headers
     };
 

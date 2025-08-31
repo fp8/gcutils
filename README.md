@@ -5,7 +5,7 @@ A comprehensive TypeScript library providing utilities and abstractions for Goog
 ## Installation
 
 ```bash
-npm install @farport/gcutils
+npm install @fp8/gcutils
 ```
 
 **Requirements:**
@@ -81,23 +81,23 @@ Easy access to Google Cloud Metadata server for instance and project information
 
 ```typescript
 // Cloud Storage
-import { BStore, BStoreRx } from '@farport/gcutils/cloud-storage';
+import { BStore, BStoreRx } from '@fp8/gcutils/cloud-storage';
 const store = new BStore();
 
 // Firestore
-import { FirestoreService } from '@farport/gcutils/firestore';
+import { FirestoreService } from '@fp8/gcutils/firestore';
 const firestore = new FirestoreService({ projectId: 'your-project' });
 
 // Pub/Sub
-import { PubSubService } from '@farport/gcutils/pubsub';
+import { PubSubService } from '@fp8/gcutils/pubsub';
 const pubsub = new PubSubService({ projectId: 'your-project' });
 
 // Secret Manager
-import { SecretsService } from '@farport/gcutils/secret-manager';
+import { SecretsService } from '@fp8/gcutils/secret-manager';
 const secrets = await SecretsService.create({ projectId: 'your-project' });
 
 // Metadata
-import { GCloudMetadata } from '@farport/gcutils/metadata';
+import { GCloudMetadata } from '@fp8/gcutils/metadata';
 const metadata = new GCloudMetadata();
 ```
 

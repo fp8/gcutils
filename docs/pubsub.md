@@ -13,7 +13,7 @@ The Pub/Sub module provides three main classes:
 ## Installation & Setup
 
 ```typescript
-import { PubSubService } from '@farport/gcutils';
+import { PubSubService } from '@fp8/gcutils';
 
 const pubsub = new PubSubService({
     projectId: 'your-project-id',
@@ -112,7 +112,7 @@ await subscriber.delete(); // For single-process usage (deletes subscription)
 ### Simple Publisher/Subscriber
 
 ```typescript
-import { PubSubService } from '@farport/gcutils/pubsub';
+import { PubSubService } from '@fp8/gcutils/pubsub';
 
 const pubsub = new PubSubService({ projectId: 'my-project' });
 
