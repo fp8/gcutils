@@ -10,6 +10,9 @@
     "engines": {
         "node": ">=20"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "build": "yarn lint && yarn build:ts && yarn test:lib && yarn gendoc",
         "build:ts": "tsc --project tsconfig.build.json",
